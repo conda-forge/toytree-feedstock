@@ -3,7 +3,7 @@ About toytree
 
 Home: https://github.com/eaton-lab/toytree
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
