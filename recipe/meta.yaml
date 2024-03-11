@@ -1,5 +1,5 @@
 {% set name = "toytree" %}
-{% set version = "2.0.5" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eaton-lab/toytree/archive/{{ version }}.tar.gz
-  sha256: 9e0fd6ba8af91cdd82c8f193c28224f5f6398dabc48ffed831ad26c1887455e2
+  sha256: e679fbdbd55023b41b49b0eccf2e8ab7ca770ac41ec19e428008447ee55d7c1b
 
 build:
   noarch: python
@@ -19,11 +19,14 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.7
     - numpy >=1.10
-    - toyplot >=0.17.0
+    - scipy
+    - pandas
+    - toyplot >=1.0
     - requests
-    - future
+    - loguru
+    - ghostscript
 
 test:
   imports:
@@ -34,10 +37,10 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
-  summary: Minimalist tree plotting library using Toyplot.
+  summary: Tree visualization, manipulation, and evolutionary analysis library.
   description: |
-    A simple library for phylogenetic analyses in Python.
-  doc_url: https://toytree.readthedocs.io/
+    A simple library for tree visualization, manipulation, and evolutionary analysis in Python.
+  doc_url: https://eaton-lab.org/toytree
   dev_url: https://github.com/eaton-lab/toytree
 
 extra:
