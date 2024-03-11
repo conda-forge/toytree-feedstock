@@ -3,11 +3,15 @@ About toytree
 
 Home: https://github.com/eaton-lab/toytree
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/toytree-feedstock/blob/master/LICENSE.txt)
 
 Summary: Minimalist tree plotting library using Toyplot.
+
+Development: https://github.com/eaton-lab/toytree
+
+Documentation: https://toytree.readthedocs.io/
 
 A simple library for phylogenetic analyses in Python.
 
