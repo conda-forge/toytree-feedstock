@@ -7,13 +7,14 @@ Home: https://github.com/eaton-lab/toytree
 
 Package license: GPL-3.0-or-later
 
-Summary: Minimalist tree plotting library using Toyplot.
+
+Summary: Tree visualization, manipulation, and evolutionary analysis library.
 
 Development: https://github.com/eaton-lab/toytree
 
-Documentation: https://toytree.readthedocs.io/
+Documentation: https://eaton-lab.org/toytree
 
-A simple library for phylogenetic analyses in Python.
+A simple library for tree visualization, manipulation, and evolutionary analysis in Python.
 
 
 Current build status
