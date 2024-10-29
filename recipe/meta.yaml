@@ -1,5 +1,5 @@
 {% set name = "toytree" %}
-{% set version = "3.0.4" %}
+{% set version = "3.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eaton-lab/toytree/archive/{{ version }}.tar.gz
-  sha256: 4de362b61d0b1717a26790cef16db80d8887532ce64906966dfb9cbd90cc1df5
+  sha256: 4f504e0ac57a6d3c7da414454a86e2398bd22a0aeaf29c39f247d621cc99cdf3
 
 build:
   noarch: python
