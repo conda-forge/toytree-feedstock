@@ -20,10 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - numpy <2.0.0
+    - numpy
     - scipy
     - pandas
-    - toyplot >=1.0
+    - toyplot
     - requests
     - loguru
     - ghostscript
