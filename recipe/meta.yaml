@@ -1,9 +1,10 @@
-{% set name = "toytree" %}
-{% set version = "3.0.5" %}
+context:
+  name: toytree
+  version: "3.0.5"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
   url: https://github.com/eaton-lab/toytree/archive/{{ version }}.tar.gz
@@ -11,19 +12,20 @@ source:
 
 build:
   noarch: python
+  script: python -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
   run:
     - python >=3.7
-    - numpy <2.0.0
+    - numpy
     - scipy
     - pandas
-    - toyplot >=1.0
+    - toyplot
     - requests
     - loguru
     - ghostscript
@@ -31,6 +33,7 @@ requirements:
 test:
   imports:
     - toytree
+    pip_check: true
 
 about:
   home: https://github.com/eaton-lab/toytree
