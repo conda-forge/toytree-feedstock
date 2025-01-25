@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eaton-lab/toytree/archive/{{ version }}.tar.gz
-  sha256: 8495fa6ba849e9a94db302269976875849af376d785edffd96c94f81a532cd15
+  sha256: 8d6568307465bcfe53b0f03d333a796965a9132ed25d77d6b4de54db8698777e
 
 build:
   noarch: python
@@ -32,7 +32,6 @@ requirements:
 test:
   imports:
     - toytree
-    pip_check: true
 
 about:
   home: https://github.com/eaton-lab/toytree
