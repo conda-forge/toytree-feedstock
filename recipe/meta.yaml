@@ -1,10 +1,9 @@
-context:
-  name: toytree
-  version: "3.0.5"
+{% set name = "toytree" %}
+{% set version = "3.0.7" %}
 
 package:
-  name: ${{ name|lower }}
-  version: ${{ version }}
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/eaton-lab/toytree/archive/{{ version }}.tar.gz
@@ -33,7 +32,6 @@ requirements:
 test:
   imports:
     - toytree
-    pip_check: true
 
 about:
   home: https://github.com/eaton-lab/toytree
