@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/eaton-lab/toytree/archive/{{ version }}.tar.gz
-  sha256: 5b276be9decc980a8c4f9056c461d55fb5161d6c07c8e6877695b69cdcedc767
+  sha256: 7cef077c199b119d2ce507a7caf77916455922bf3b4a7b53bdcf273ec932f422
 
 build:
   noarch: python
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
